@@ -37,3 +37,8 @@ function getOutOfStockProducts(array $products): array
         return $product['quantity'] <= 0;
     }));
 }
+
+function formatPrice(float $price): string
+{
+    return number_format($price,0,".",",")." "."VND";
+}

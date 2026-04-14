@@ -38,6 +38,7 @@ $outOfStockCount=count($outOfStockNotebooks);
                     <p><strong>Brand: </strong><?php echo $notebook['brand'];?></p>
                     <p><strong>Category: </strong><?php echo $notebook['category'];?></p>
                     <p><strong>Quantity: </strong><?php echo $notebook['quantity'];?></p>
+                    <p><strong>Price: </strong><?php echo formatPrice($notebook['price']);?></p>
                     <p><strong>Status: </strong><?php echo getStockStatus($notebook['quantity']);?></p>
                 </div>
             <?php endforeach;?>

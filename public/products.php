@@ -44,6 +44,7 @@ $outOfStockCount=count($outOfStockProducts);
                     <p><strong>Brand: </strong><?php echo $product['brand'];?></p>
                     <p><strong>Category: </strong><?php echo $product['category'];?></p>
                     <p><strong>Quantity: </strong><?php echo $product['quantity'];?></p>
+                    <p><strong>Price: </strong><?php echo formatPrice($product['price']);?></p>
                     <p><strong>Status: </strong><?php echo getStockStatus($product['quantity']);?></p>
                 </div>
             <?php endforeach;?>

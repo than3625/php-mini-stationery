@@ -38,6 +38,7 @@ $outOfStockCount=count($outOfStockPens);
                     <p><strong>Brand: </strong><?php echo $pen['brand'];?></p>
                     <p><strong>Category: </strong><?php echo $pen['category'];?></p>
                     <p><strong>Quantity: </strong><?php echo $pen['quantity'];?></p>
+                    <p><strong>Price: </strong><?php echo formatPrice($pen['price']);?></p>
                     <p><strong>Status: </strong><?php echo getStockStatus($pen['quantity']);?></p>
                 </div>
             <?php endforeach;?>

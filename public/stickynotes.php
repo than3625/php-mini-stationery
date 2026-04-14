@@ -38,6 +38,7 @@ $outOfStockCount=count($outOfStockStickyNotes);
                     <p><strong>Brand: </strong><?php echo $stickynote['brand'];?></p>
                     <p><strong>Category: </strong><?php echo $stickynote['category'];?></p>
                     <p><strong>Quantity: </strong><?php echo $stickynote['quantity'];?></p>
+                    <p><strong>Price: </strong><?php echo formatPrice($stickynote['price']);?></p>
                     <p><strong>Status: </strong><?php echo getStockStatus($stickynote['quantity']);?></p>
                     </div>
                     <?php endforeach;?>
